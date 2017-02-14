@@ -1,0 +1,7 @@
+# Jekyll default ignored files.
+_site
+.sass-cache
+.jekyll-metadata
+
+# Ignore RVM gemset directive.
+.ruby-gemset
