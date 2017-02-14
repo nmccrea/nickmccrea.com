@@ -1,1 +1,9 @@
-@import "bootstrap";
+@charset "utf-8";
+
+// Bootstrap is ready to go. Just uncomment the following line to enable it.
+// @import "bootstrap";
+
+// Minima provides some nice default styling.
+// Note that there is no guarantee against conflicts if both Bootstrap and
+// Minima are enabled.
+@import "minima";
