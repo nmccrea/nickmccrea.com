@@ -1,9 +1,56 @@
 #homepage {
+  // Vertical Alignment - Landscape
+  @include media-xs-landscape {
+    @include vertical-center;
+  }
+  @include media-sm-landscape {
+    #splash { margin-top: 20%; }
+  }
+  @include media-md-landscape {
+    #splash { margin-top: 20%; }
+  }
+  @include media-lg-landscape {
+    #splash { margin-top: 20%; }
+  }
+  // Vertical Alignment - Portrait
+  @include media-xs-portrait {
+    #splash { margin-top: 30%; }
+  }
+  @include media-sm-portrait {
+    #splash { margin-top: 35%; }
+  }
+  @include media-md-portrait {
+    #splash { margin-top: 35%; }
+  }
+  @include media-lg-portrait {
+    #splash { margin-top: 35%; }
+  }
 
   #splash {
     font-family:  'Shadows Into Light Two', fantasy;
     font-variant: small-caps;
-    margin-top:   15%;
     text-align:   center;
+
+    #name {
+      font-size:    3.8em;
+      font-weight:  bolder;
+    }
+
+    #occupation {
+      line-height:  0.8;
+      margin-top:   5px;
+    }
+
+    hr {
+      border-top: 1px solid $light-gray;
+      margin:     0px;
+    }
+
+    .nav {
+      li {
+        font-size:    1.6em;
+        line-height:  0.8em;
+      }
+    }
   }
 }
