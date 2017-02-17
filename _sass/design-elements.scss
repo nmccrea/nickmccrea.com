@@ -9,7 +9,6 @@ $white:       white;
 ////
 // Color Scheme
 $background-color:  $white;
-
 $primary-color:     $black;
 $secondary-color:   $red;
 
@@ -51,6 +50,11 @@ $bootstrap-screen-lg-min: 1200px;
 ////
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+.fancy-font {
+  font-family:    'Shadows Into Light Two', fantasy;
+  font-variant:   small-caps;
+  letter-spacing: 0.2em;
+}
 
 
 ////

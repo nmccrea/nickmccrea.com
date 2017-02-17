@@ -1,29 +1,55 @@
+////
+// Variables
+$footer-min-height:       30px;
+$header-min-height:       50px;
+$navbar-brand-width:      24%;
+$navbar-half-menu-width:  ( 100% - $navbar-brand-width ) / 2;
+
 html, body, main, .page {
   background-color: $background-color;
   height:           100%;
 }
 
+main {
+  padding-bottom: $footer-min-height;
+  padding-top:    $header-min-height;
+}
+
 ////
 // Header
 #header {
+  @extend           .fancy-font;
   background-color: $background-color;
   border:           none;
   color:            $primary-color;
-  font-family:      'Shadows Into Light Two', fantasy;
-  font-variant:     small-caps;
+  min-height:       $header-min-height;
   text-align:       center;
 
-  #brand {
-    font-size:    2em;
-    font-weight:  bolder;
+  nav {
+    border-bottom:  1px solid $border-color;
+    min-height:     $header-min-height;
   }
 
-  nav {
-    border-bottom: 1px solid $border-color;
+  #brand {
+    font-size:    2.2em;
+    font-weight:  bolder;
+    width:        $navbar-brand-width;
+  }
+
+  .nav {
+    font-size:    0.9em;
+    font-weight:  bolder;
+    width:        $navbar-half-menu-width;
+
+    li > a {
+      padding-bottom: 13px;
+      padding-top:    17px;
+    }
   }
 }
 
 ////
 // Footer
-footer.navbar {
+#footer {
+  min-height: $footer-min-height;
 }

@@ -27,8 +27,7 @@
   }
 
   #splash {
-    font-family:  'Shadows Into Light Two', fantasy;
-    font-variant: small-caps;
+    @extend       .fancy-font;
     text-align:   center;
 
     #name {
@@ -37,8 +36,9 @@
     }
 
     #occupation {
-      line-height:  0.8;
-      margin-top:   5px;
+      line-height:    0.8;
+      margin-bottom:  0.6em;
+      margin-top:     5px;
     }
 
     hr {
@@ -48,8 +48,8 @@
 
     .nav {
       li {
-        font-size:    1.6em;
-        line-height:  0.8em;
+        font-size:    0.8em;
+        font-weight:  bolder;
       }
     }
   }
