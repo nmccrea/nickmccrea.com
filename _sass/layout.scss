@@ -2,3 +2,28 @@ html, body, main, .page {
   background-color: $background-color;
   height:           100%;
 }
+
+////
+// Header
+#header {
+  background-color: $background-color;
+  border:           none;
+  color:            $primary-color;
+  font-family:      'Shadows Into Light Two', fantasy;
+  font-variant:     small-caps;
+  text-align:       center;
+
+  #brand {
+    font-size:    2em;
+    font-weight:  bolder;
+  }
+
+  nav {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+////
+// Footer
+footer.navbar {
+}

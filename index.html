@@ -1,23 +1,27 @@
 ---
-layout: default
+layout: basic
 ---
 
-<div class="page" id="homepage">
+<main class="container" aria-label="Content">
 
-  <div class="col-xs-12 col-sm-8 col-sm-offset-2" id="splash">
+  <div class="page" id="homepage">
 
-    <h1 id="name">Nick McCrea</h1>
-    <h2 id="occupation">Computer Engineer</h2>
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2" id="splash">
+      <h1 id="name">Nick McCrea</h1>
+      <h2 id="occupation">Computer Engineer</h2>
 
-    <hr />
-    <nav>
-      <ul class="row nav">
-        <li class="col-sm-3 col-md-2 col-md-offset-2"><a id="link-home", href="#">Home</a></li>
-        <li class="col-sm-3 col-md-2"><a id="link-about", href="#">About</a></li>
-        <li class="col-sm-3 col-md-2"><a id="link-blog", href="#">Blog</a></li>
-        <li class="col-sm-3 col-md-2"><a id="link-contact", href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <hr />
+      <hr />
+      <nav>
+        <ul class="row nav">
+          <li class="col-sm-3 col-md-2 col-md-offset-2"><a id="link-home", href="{% link index.html %}">HOME</a></li>
+          <li class="col-sm-3 col-md-2"><a id="link-about", href="{% link about.md %}">ABOUT</a></li>
+          <li class="col-sm-3 col-md-2"><a id="link-blog", href="{% link blog.md %}">BLOG</a></li>
+          <li class="col-sm-3 col-md-2"><a id="link-contact", href="{% link contact.md %}">CONTACT</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </div>
+
   </div>
-</div>
+
+</main>
