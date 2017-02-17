@@ -3,5 +3,8 @@ _site
 .sass-cache
 .jekyll-metadata
 
+# Ignore asset pipeline cache.
+.asset-cache
+
 # Ignore RVM gemset directive.
 .ruby-gemset
