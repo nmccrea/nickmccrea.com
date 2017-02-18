@@ -1,29 +1,29 @@
 #homepage {
   // Vertical Alignment - Landscape
   @include media-xs-landscape {
-    @include vertical-center;
+    #splash { margin-top:   auto; }
   }
   @include media-sm-landscape {
-    #splash { margin-top: 20%; }
+    #splash { margin-top: 15%; }
   }
   @include media-md-landscape {
-    #splash { margin-top: 20%; }
+    #splash { margin-top: 15%; }
   }
   @include media-lg-landscape {
-    #splash { margin-top: 20%; }
+    #splash { margin-top: 15%; }
   }
   // Vertical Alignment - Portrait
   @include media-xs-portrait {
-    #splash { margin-top: 30%; }
+    #splash { margin-top:   10%; }
   }
   @include media-sm-portrait {
-    #splash { margin-top: 35%; }
+    #splash { margin-top: 25%; }
   }
   @include media-md-portrait {
-    #splash { margin-top: 35%; }
+    #splash { margin-top: 30%; }
   }
   @include media-lg-portrait {
-    #splash { margin-top: 35%; }
+    #splash { margin-top: 30%; }
   }
 
   #splash {
@@ -36,6 +36,7 @@
     }
 
     #occupation {
+      font-size:      2.1em;
       line-height:    0.8;
       margin-bottom:  0.6em;
       margin-top:     5px;
@@ -51,6 +52,11 @@
         font-size:    0.8em;
         font-weight:  bolder;
       }
+    }
+
+    @include media-xs-portrait {
+      #name       { font-size: 3.5em; }
+      #occupation { font-size: 1.8em; }
     }
   }
 }
