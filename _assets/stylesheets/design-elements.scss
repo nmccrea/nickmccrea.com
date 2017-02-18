@@ -21,6 +21,18 @@ $bootstrap-screen-sm-min: 768px;
 $bootstrap-screen-md-min: 992px;
 $bootstrap-screen-lg-min: 1200px;
 
+@mixin media-xs {
+  @media ( max-width: $bootstrap-screen-sm-min ) { @content; }
+}
+@mixin media-sm {
+  @media ( min-width: $bootstrap-screen-sm-min ) { @content; }
+}
+@mixin media-md {
+  @media ( min-width: $bootstrap-screen-md-min ) { @content; }
+}
+@mixin media-lg {
+  @media ( min-width: $bootstrap-screen-lg-min ) { @content; }
+}
 @mixin media-xs-landscape {
   @media (min-aspect-ratio: 1/1) and ( max-width: $bootstrap-screen-sm-min ) { @content; }
 }
@@ -72,9 +84,20 @@ a {
 
 ////
 // Nav
-.nav, .navbar-default .navbar-nav {
+.nav {
   li > a {
     @extend a;
+  }
+}
+.navbar-default {
+  .navbar-brand {
+    @extend a;
+  }
+
+  .navbar-nav {
+    li > a {
+      @extend a;
+    }
   }
 }
 

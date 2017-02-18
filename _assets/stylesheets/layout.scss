@@ -2,8 +2,8 @@
 // Variables
 $footer-min-height:       30px;
 $header-min-height:       50px;
-$navbar-brand-width:      24%;
-$navbar-half-menu-width:  ( 100% - $navbar-brand-width ) / 2;
+$navbar-brand-width:      240px;
+$navbar-menu-item-width:  95px;
 
 html, body, main, .page {
   background-color: $background-color;
@@ -17,7 +17,7 @@ main {
 
 ////
 // Header
-#header {
+#header.navbar-default {
   @extend           .fancy-font;
   background-color: $background-color;
   border:           none;
@@ -30,20 +30,49 @@ main {
     min-height:     $header-min-height;
   }
 
-  #brand {
+  .navbar-brand {
     font-size:    2.2em;
     font-weight:  bolder;
-    width:        $navbar-brand-width;
   }
 
-  .nav {
+  .navbar-nav {
     font-size:    0.9em;
     font-weight:  bolder;
-    width:        $navbar-half-menu-width;
+  }
 
-    li > a {
-      padding-bottom: 13px;
-      padding-top:    17px;
+  // Non-collapsed navbar.
+  @include media-sm {
+    .navbar-header {
+      margin-bottom:  -$header-min-height;
+      text-align:     center;
+      width:          100%;
+    }
+
+    .navbar-brand {
+      display:  inline-block;
+      float:    none;
+      margin:   0px;
+      position: relative;
+      width:    $navbar-brand-width;
+      z-index:  100;
+    }
+
+    .navbar-nav {
+      width:      100%;
+      text-align: center;
+
+      li {
+        display:  inline-block;
+        float:    none;
+        width:    $navbar-menu-item-width;
+
+        &.left-of-brand {
+          margin-right: $navbar-brand-width / 2;
+        }
+        &.right-of-brand {
+          margin-left:  $navbar-brand-width / 2;
+        }
+      }
     }
   }
 }
