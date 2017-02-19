@@ -2,8 +2,10 @@
 // Variables
 $footer-min-height:       30px;
 $header-min-height:       50px;
+$nav-padding-vertical:    15px;
 $navbar-brand-width:      240px;
 $navbar-menu-item-width:  95px;
+$content-padding-top:     $header-min-height + ( 2 * $nav-padding-vertical );
 
 html, body, main, .page {
   background-color: $background-color;
@@ -13,6 +15,7 @@ html, body, main, .page {
 main {
   padding-bottom: $footer-min-height;
   padding-top:    $header-min-height;
+  @include media-sm { padding-top: $content-padding-top; }
 }
 
 ////
@@ -26,7 +29,7 @@ main {
   text-align:       center;
 
   nav {
-    border-bottom:  1px solid $border-color;
+    // border-bottom:  1px solid $border-color;
     min-height:     $header-min-height;
   }
 
@@ -42,6 +45,11 @@ main {
 
   // Non-collapsed navbar.
   @include media-sm {
+    nav {
+      padding-bottom: $nav-padding-vertical;
+      padding-top:    $nav-padding-vertical;
+    }
+
     .navbar-header {
       margin-bottom:  -$header-min-height;
       text-align:     center;
@@ -60,6 +68,11 @@ main {
     .navbar-nav {
       width:      100%;
       text-align: center;
+
+      a {
+        padding-bottom: 13px;
+        padding-top:    17px;
+      }
 
       li {
         display:  inline-block;

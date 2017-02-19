@@ -1,29 +1,34 @@
+// Use all of the space on mobile.
+@include media-xs {
+  main.homepage-container { padding-top: 20px; }
+}
+
 #homepage {
   // Vertical Alignment - Landscape
   @include media-xs-landscape {
-    #splash { margin-top:   auto; }
+    #splash { margin-top: auto; }
   }
   @include media-sm-landscape {
     #splash { margin-top: 15%; }
   }
   @include media-md-landscape {
-    #splash { margin-top: 15%; }
+    #splash { margin-top: 10%; }
   }
   @include media-lg-landscape {
-    #splash { margin-top: 15%; }
+    #splash { margin-top: 10%; }
   }
   // Vertical Alignment - Portrait
   @include media-xs-portrait {
-    #splash { margin-top:   10%; }
+    #splash { margin-top: 10%; }
   }
   @include media-sm-portrait {
     #splash { margin-top: 25%; }
   }
   @include media-md-portrait {
-    #splash { margin-top: 30%; }
+    #splash { margin-top: 20%; }
   }
   @include media-lg-portrait {
-    #splash { margin-top: 30%; }
+    #splash { margin-top: 20%; }
   }
 
   #splash {
@@ -44,7 +49,7 @@
 
     hr {
       border-top: 1px solid $border-color;
-      margin:     0px;
+      margin:     7px;
     }
 
     .nav {
