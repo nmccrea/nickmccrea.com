@@ -2,7 +2,7 @@
 // Variables
 $footer-background-color: $lighter-gray;
 $footer-height:           80px;
-$footer-height-xs:        80px;
+$footer-height-xs:        100px;
 
 $header-min-height:       50px;
 $nav-padding-vertical:    15px;
@@ -125,7 +125,7 @@ main {
   width:            100%;
 
   a {
-    color:            $secondary-color;
+    color:  $secondary-color;
   }
 
   .footer-left {
@@ -154,8 +154,8 @@ main {
     .footer-left, .footer-right { text-align: center; }
   }
 
-  // Footer on vertical mobile.
-  @include media-xs-portrait {
+  // Footer on very small mobile.
+  @include media-tiny {
     #footer-copyright {
       border:   none;
       padding:  initial;

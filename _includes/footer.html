@@ -2,12 +2,20 @@
   <div class="container footer-container">
 
     <div class="footer-left col-sm-6">
-      <div id="footer-built-with", class="footer-item">Handbuilt by me with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</div>
+      <div id="footer-built-with" class="footer-item">
+        Handbuilt by me with <a href="https://jekyllrb.com/" target="_blank" tabindex="100">Jekyll</a>.
+      </div>
     </div>
 
     <div class="footer-right col-sm-6">
-      <div id="footer-copyright", class="footer-item">&copy; 2017 Nick McCrea</div>
-      <div id="footer-location", class="footer-item">Miami &bull; FL &bull; USA</div>
+      <div id="footer-copyright" class="footer-item">&copy; 2017 Nick McCrea</div>
+      <div id="footer-location" class="footer-item">Miami &bull; FL &bull; USA</div>
+    </div>
+
+    <div class="footer-left col-sm-6">
+      {% if site.email %}
+        <div id="footer-email" class="footer-item"><a href="mailto:{{ site.email }}" tabindex="100">{{ site.email }}</a></div>
+      {% endif %}
     </div>
 
   </div>

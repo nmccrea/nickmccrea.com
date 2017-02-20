@@ -18,9 +18,14 @@ $border-color: $light-gray;
 
 ////
 // Media Queries
+$screen-tiny:             350px;
 $bootstrap-screen-sm-min: 768px;
 $bootstrap-screen-md-min: 992px;
 $bootstrap-screen-lg-min: 1200px;
+
+@mixin media-tiny {
+  @media ( max-width: $screen-tiny ) { @content; }
+}
 
 @mixin media-xs {
   @media ( max-width: $bootstrap-screen-sm-min ) { @content; }
