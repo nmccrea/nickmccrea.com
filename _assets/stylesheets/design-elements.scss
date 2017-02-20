@@ -1,9 +1,10 @@
 ////
 // Color Palette
-$black:       black;
-$light-gray:  #CCC;
-$red:         red;
-$white:       white;
+$black:         black;
+$light-gray:    #CCC;
+$lighter-gray:  #EEE;
+$red:           red;
+$white:         white;
 
 
 ////
@@ -24,20 +25,15 @@ $bootstrap-screen-lg-min: 1200px;
 @mixin media-xs {
   @media ( max-width: $bootstrap-screen-sm-min ) { @content; }
 }
-@mixin media-sm {
-  @media ( min-width: $bootstrap-screen-sm-min ) { @content; }
-}
-@mixin media-md {
-  @media ( min-width: $bootstrap-screen-md-min ) { @content; }
-}
-@mixin media-lg {
-  @media ( min-width: $bootstrap-screen-lg-min ) { @content; }
-}
 @mixin media-xs-landscape {
   @media (min-aspect-ratio: 1/1) and ( max-width: $bootstrap-screen-sm-min ) { @content; }
 }
 @mixin media-xs-portrait {
   @media (max-aspect-ratio: 1/1) and ( max-width: $bootstrap-screen-sm-min ) { @content; }
+}
+
+@mixin media-sm {
+  @media ( min-width: $bootstrap-screen-sm-min ) { @content; }
 }
 @mixin media-sm-landscape {
   @media (min-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-sm-min ) { @content; }
@@ -45,11 +41,19 @@ $bootstrap-screen-lg-min: 1200px;
 @mixin media-sm-portrait {
   @media (max-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-sm-min ) { @content; }
 }
+
+@mixin media-md {
+  @media ( min-width: $bootstrap-screen-md-min ) { @content; }
+}
 @mixin media-md-landscape {
   @media (min-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-md-min ) { @content; }
 }
 @mixin media-md-portrait {
   @media (max-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-md-min ) { @content; }
+}
+
+@mixin media-lg {
+  @media ( min-width: $bootstrap-screen-lg-min ) { @content; }
 }
 @mixin media-lg-landscape {
   @media (min-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-lg-min ) { @content; }
@@ -72,10 +76,10 @@ $bootstrap-screen-lg-min: 1200px;
 ////
 // Links
 a {
-  background-color: $background-color;
+  background-color: transparent;
   color:            $primary-color;
   &:active, &:focus, &:hover {
-    background-color: $background-color;
+    background-color: transparent;
     color:            $secondary-color;
     text-decoration:  none;
   }

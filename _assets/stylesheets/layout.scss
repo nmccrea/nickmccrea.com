@@ -1,26 +1,41 @@
 ////
 // Variables
-$footer-min-height:       30px;
+$footer-background-color: $lighter-gray;
+$footer-height:           80px;
+$footer-height-xs:        80px;
+
 $header-min-height:       50px;
 $nav-padding-vertical:    15px;
 $navbar-brand-width:      240px;
 $navbar-menu-item-width:  95px;
-$content-padding-top:     $header-min-height + ( 2 * $nav-padding-vertical );
 
-html, body, main, .page {
+$content-padding-top:       $header-min-height + ( 2 * $nav-padding-vertical );
+$content-padding-top-xs:    $header-min-height;
+$content-padding-bottom:    $footer-height;
+$content-padding-bottom-xs: $footer-height-xs;
+
+////
+// Page
+html, body {
   background-color: $background-color;
   height:           100%;
 }
 
+////
+// Content
 main {
-  padding-bottom: $footer-min-height;
-  padding-top:    $header-min-height;
-  @include media-sm { padding-top: $content-padding-top; }
+  min-height:     100%;
+  padding-bottom: $content-padding-bottom;
+  padding-top:    $content-padding-top;
+  @include media-xs {
+    padding-bottom: $content-padding-bottom-xs;
+    padding-top:    $content-padding-top-xs;
+   }
 }
 
 ////
 // Header
-#header.navbar-default {
+#header {
   @extend           .fancy-font;
   background-color: $background-color;
   border:           none;
@@ -41,6 +56,12 @@ main {
   .navbar-nav {
     font-size:    0.9em;
     font-weight:  bolder;
+  }
+
+  // Collapsed navbar.
+  @include media-xs {
+    nav           { border-bottom:  1px solid $border-color; }
+    .navbar-brand { font-size:      1.8em; }
   }
 
   // Non-collapsed navbar.
@@ -93,5 +114,51 @@ main {
 ////
 // Footer
 #footer {
-  min-height: $footer-min-height;
+  @extend .fancy-font;
+  @extend .vertical-center;
+  background-color: $footer-background-color;
+  font-size:        0.9em;
+  font-weight:      bolder;
+  height:           $footer-height;
+  margin-bottom:    0px;
+  margin-top:       -$content-padding-bottom;
+  width:            100%;
+
+  a {
+    color:            $secondary-color;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  .footer-item {
+    display:  inline-block;
+    margin:   2px auto;
+  }
+
+  #footer-copyright {
+    border-right:   1px solid $border-color;
+    padding-right:  6px;
+  }
+
+  // Footer on mobile.
+  @include media-xs {
+    height:     $footer-height-xs;
+    margin-top: -$content-padding-bottom-xs;
+
+    .footer-left, .footer-right { text-align: center; }
+  }
+
+  // Footer on vertical mobile.
+  @include media-xs-portrait {
+    #footer-copyright {
+      border:   none;
+      padding:  initial;
+    }
+  }
 }
