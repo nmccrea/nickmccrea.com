@@ -2,7 +2,7 @@
 // Variables
 $footer-background-color: $lighter-gray;
 $footer-height:           80px;
-$footer-height-xs:        100px;
+$footer-height-xs:        110px;
 
 $header-min-height:       50px;
 $nav-padding-vertical:    15px;
@@ -138,12 +138,20 @@ main {
 
   .footer-item {
     display:  inline-block;
-    margin:   2px auto;
+    margin:   3px auto;
   }
 
-  #footer-copyright {
+  #footer-built-with {
+    width: 100%;
+  }
+
+  #footer-copyright, #footer-email {
     border-right:   1px solid $border-color;
     padding-right:  6px;
+  }
+
+  .icon-github svg {
+    margin-bottom: -3px;
   }
 
   // Footer on mobile.
