@@ -32,36 +32,36 @@
   }
 
   #splash {
-    @extend       .fancy-font;
-    text-align:   center;
+    @extend         .fancy-font;
+    margin-bottom:  0.3rem;
+    text-align:     center;
 
     #name {
-      font-size:    3.8em;
+      font-size:    3.3rem;
       font-weight:  bolder;
+      margin:       0rem auto;
     }
 
     #occupation {
-      font-size:      2.1em;
-      line-height:    0.8;
-      margin-bottom:  0.6em;
-      margin-top:     5px;
+      font-size:      1.8rem;
+      margin:         0.3rem auto 0.6rem;
     }
 
     hr {
       border-top: 1px solid $border-color;
-      margin:     7px;
+      margin:     0.5rem auto;
     }
 
     .nav {
       li {
-        font-size:    0.8em;
+        font-size:    0.8rem;
         font-weight:  bolder;
       }
     }
 
     @include media-xs-portrait {
-      #name       { font-size: 3.5em; }
-      #occupation { font-size: 1.8em; }
+      #name       { font-size: 3.0rem; }
+      #occupation { font-size: 1.6rem; }
     }
   }
 }
