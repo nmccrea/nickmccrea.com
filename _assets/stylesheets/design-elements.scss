@@ -74,12 +74,22 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 
 
 ////
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+// Typography
+@import url( 'https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' );
 .fancy-font {
   font-family:    'Shadows Into Light Two', fantasy;
   font-variant:   small-caps;
   letter-spacing: 0.2em;
+}
+
+@import url( 'https://fonts.googleapis.com/css?family=Ubuntu' );
+.heading-font {
+  font-family:  'Ubuntu', sans-serif;
+}
+
+@import url( 'https://fonts.googleapis.com/css?family=Roboto' );
+.content-font {
+  font-family:  'Roboto', sans-serif;
 }
 
 

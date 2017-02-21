@@ -1,0 +1,40 @@
+.content {
+  ////
+  // Typography
+  @extend .content-font;
+
+  h1, h2, h3, h4, h5, h6 {
+    @extend .heading-font;
+    color:  $secondary-color;
+  }
+
+  // Responsive type scaling.
+  // See http://typecast.com/blog/a-more-modern-scale-for-web-typography
+  @include media-xs-down {
+    font-size:    0.95rem;
+    line-height:  1.4;
+
+    h1  { font-size:  2.0em;    line-height:  1.25; }
+    h2  { font-size:  1.635em;  line-height:  1.15; }
+    h3  { font-size:  1.375em;  line-height:  1.14; }
+    h4  { font-size:  1.125em;  line-height:  1.11; }
+  }
+  @include media-sm-up {
+    font-size:    1.0rem;
+    line-height:  1.5;
+
+    h1  { font-size:  2.5em;    line-height:  1.125;  }
+    h2  { font-size:  2.0em;    line-height:  1.25;   }
+    h3  { font-size:  1.5em;    line-height:  1.25;   }
+    h4  { font-size:  1.125em;  line-height:  1.222;  }
+  }
+  @include media-md-up {
+    font-size:    1.0rem;
+    line-height:  1.5;
+
+    h1  { font-size:  3.0em;    line-height:  1.05;   }
+    h2  { font-size:  2.25em;   line-height:  1.25;   }
+    h3  { font-size:  1.75em;   line-height:  1.25;   }
+    h4  { font-size:  1.125em;  line-height:  1.222;  }
+  }
+}
