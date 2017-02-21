@@ -18,53 +18,58 @@ $border-color: $light-gray;
 
 ////
 // Media Queries
-$screen-tiny:             350px;
 $bootstrap-screen-sm-min: 768px;
 $bootstrap-screen-md-min: 992px;
 $bootstrap-screen-lg-min: 1200px;
 
-@mixin media-tiny {
-  @media ( max-width: $screen-tiny ) { @content; }
+$breakpoint-screen-tiny:  350px;
+$breakpoint-screen-sm:    $bootstrap-screen-sm-min;
+$breakpoint-screen-md:    $bootstrap-screen-md-min;
+$breakpoint-screen-lg:    $bootstrap-screen-lg-min;
+
+
+@mixin media-tiny-down {
+  @media ( max-width: $breakpoint-screen-tiny - 1 ) { @content; }
 }
 
-@mixin media-xs {
-  @media ( max-width: $bootstrap-screen-sm-min ) { @content; }
+@mixin media-xs-down {
+  @media ( max-width: $breakpoint-screen-sm - 1 ) { @content; }
 }
-@mixin media-xs-landscape {
-  @media (min-aspect-ratio: 1/1) and ( max-width: $bootstrap-screen-sm-min ) { @content; }
+@mixin media-xs-down-landscape {
+  @media (min-aspect-ratio: 1/1) and ( max-width: $breakpoint-screen-sm - 1 ) { @content; }
 }
-@mixin media-xs-portrait {
-  @media (max-aspect-ratio: 1/1) and ( max-width: $bootstrap-screen-sm-min ) { @content; }
-}
-
-@mixin media-sm {
-  @media ( min-width: $bootstrap-screen-sm-min ) { @content; }
-}
-@mixin media-sm-landscape {
-  @media (min-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-sm-min ) { @content; }
-}
-@mixin media-sm-portrait {
-  @media (max-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-sm-min ) { @content; }
+@mixin media-xs-down-portrait {
+  @media (max-aspect-ratio: 1/1) and ( max-width: $breakpoint-screen-sm - 1 ) { @content; }
 }
 
-@mixin media-md {
-  @media ( min-width: $bootstrap-screen-md-min ) { @content; }
+@mixin media-sm-up {
+  @media ( min-width: $breakpoint-screen-sm ) { @content; }
 }
-@mixin media-md-landscape {
-  @media (min-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-md-min ) { @content; }
+@mixin media-sm-up-landscape {
+  @media (min-aspect-ratio: 1/1) and ( min-width: $breakpoint-screen-sm ) { @content; }
 }
-@mixin media-md-portrait {
-  @media (max-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-md-min ) { @content; }
+@mixin media-sm-up-portrait {
+  @media (max-aspect-ratio: 1/1) and ( min-width: $breakpoint-screen-sm ) { @content; }
 }
 
-@mixin media-lg {
-  @media ( min-width: $bootstrap-screen-lg-min ) { @content; }
+@mixin media-md-up {
+  @media ( min-width: $breakpoint-screen-md ) { @content; }
 }
-@mixin media-lg-landscape {
-  @media (min-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-lg-min ) { @content; }
+@mixin media-md-up-landscape {
+  @media (min-aspect-ratio: 1/1) and ( min-width: $breakpoint-screen-md ) { @content; }
 }
-@mixin media-lg-portrait {
-  @media (max-aspect-ratio: 1/1) and ( min-width: $bootstrap-screen-lg-min ) { @content; }
+@mixin media-md-up-portrait {
+  @media (max-aspect-ratio: 1/1) and ( min-width: $breakpoint-screen-md ) { @content; }
+}
+
+@mixin media-lg-up {
+  @media ( min-width: $breakpoint-screen-lg ) { @content; }
+}
+@mixin media-lg-up-landscape {
+  @media (min-aspect-ratio: 1/1) and ( min-width: $breakpoint-screen-lg ) { @content; }
+}
+@mixin media-lg-up-portrait {
+  @media (max-aspect-ratio: 1/1) and ( min-width: $breakpoint-screen-lg ) { @content; }
 }
 
 

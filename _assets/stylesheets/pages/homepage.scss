@@ -1,33 +1,33 @@
 // Use all of the space on mobile.
-@include media-xs {
+@include media-xs-down {
   main.homepage-container { padding-top: 20px; }
 }
 
 #homepage {
   // Vertical Alignment - Landscape
-  @include media-xs-landscape {
+  @include media-xs-down-landscape {
     #splash { margin-top: auto; }
   }
-  @include media-sm-landscape {
+  @include media-sm-up-landscape {
     #splash { margin-top: 15%; }
   }
-  @include media-md-landscape {
+  @include media-md-up-landscape {
     #splash { margin-top: 10%; }
   }
-  @include media-lg-landscape {
+  @include media-lg-up-landscape {
     #splash { margin-top: 10%; }
   }
   // Vertical Alignment - Portrait
-  @include media-xs-portrait {
+  @include media-xs-down-portrait {
     #splash { margin-top: 10%; }
   }
-  @include media-sm-portrait {
+  @include media-sm-up-portrait {
     #splash { margin-top: 25%; }
   }
-  @include media-md-portrait {
+  @include media-md-up-portrait {
     #splash { margin-top: 20%; }
   }
-  @include media-lg-portrait {
+  @include media-lg-up-portrait {
     #splash { margin-top: 20%; }
   }
 
@@ -59,7 +59,7 @@
       }
     }
 
-    @include media-xs-portrait {
+    @include media-xs-down-portrait {
       #name       { font-size: 3.0rem; }
       #occupation { font-size: 1.6rem; }
     }

@@ -28,7 +28,7 @@ main {
   min-height:     100%;
   padding-bottom: $content-padding-bottom;
   padding-top:    $content-padding-top;
-  @include media-xs {
+  @include media-xs-down {
     padding-bottom: $content-padding-bottom-xs;
     padding-top:    $content-padding-top-xs;
    }
@@ -60,14 +60,14 @@ main {
   }
 
   // Collapsed navbar.
-  @include media-xs {
+  @include media-xs-down {
     nav           { border-bottom:  1px solid $border-color; }
     .navbar-brand { font-size:      1.6rem; }
     .navbar-nav   { text-align:     left; }
   }
 
   // Non-collapsed navbar.
-  @include media-sm {
+  @include media-sm-up {
     nav {
       padding-bottom: $nav-padding-vertical;
       padding-top:    $nav-padding-vertical;
@@ -161,7 +161,7 @@ main {
   }
 
   // Footer on mobile.
-  @include media-xs {
+  @include media-xs-down {
     height:     $footer-height-xs;
     margin-top: -$content-padding-bottom-xs;
 
