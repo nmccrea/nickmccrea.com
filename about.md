@@ -4,6 +4,10 @@ layout: default
 permalink: /about/
 ---
 
+![Nick McCrea]( {% asset_path 'nick-mccrea-headshot.jpg' %} ){:width="280px" :height="280px"}
+
+<hr />
+
 # About Me
 
 My name is Nick McCrea
@@ -17,6 +21,8 @@ Curabitur sapien odio, facilisis at leo id, gravida congue lorem. Duis et ullamc
 ## This is an H2 Heading
 
 Donec et ultrices tellus. Quisque sodales enim arcu, eu posuere diam congue eget. Sed ut facilisis felis, sed malesuada dui. Nunc molestie ornare tincidunt. Fusce volutpat porttitor tincidunt. Donec sit amet nulla laoreet, elementum ipsum vel, consequat augue. Phasellus sagittis odio id dolor fringilla, ut tristique sapien volutpat. Vivamus cursus ornare hendrerit. Nulla eget vulputate lorem. Phasellus semper ac leo a pellentesque. Suspendisse fringilla in nisl vitae scelerisque. Mauris venenatis viverra feugiat. Nullam molestie eros ac sollicitudin accumsan.
+
+> This is a block quote. Behold the quote in a block. Viva la quotacion bloqué.
 
 Sed at nulla ut erat lacinia finibus. Aliquam quis luctus mauris, a fermentum erat. Sed convallis interdum urna nec dapibus. Nullam et urna ac lacus sollicitudin pellentesque in a tortor. Maecenas venenatis ex et est viverra, at dapibus felis sagittis. Sed libero dolor, imperdiet at luctus id, lobortis vitae purus. Aliquam euismod urna a dui tincidunt fermentum.
 

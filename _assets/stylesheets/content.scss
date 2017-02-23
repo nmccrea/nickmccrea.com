@@ -14,27 +14,43 @@
     font-size:    0.95rem;
     line-height:  1.4;
 
-    h1  { font-size:  2.0em;    line-height:  1.25; }
-    h2  { font-size:  1.635em;  line-height:  1.15; }
-    h3  { font-size:  1.375em;  line-height:  1.14; }
-    h4  { font-size:  1.125em;  line-height:  1.11; }
+    h1          { font-size:  2.0em;    line-height:  1.25; }
+    h2          { font-size:  1.635em;  line-height:  1.15; }
+    h3          { font-size:  1.375em;  line-height:  1.14; }
+    h4          { font-size:  1.125em;  line-height:  1.11; }
+    blockquote  { font-size:  1.25em;   line-height:  1.25; }
   }
   @include media-sm-up {
     font-size:    1.0rem;
     line-height:  1.5;
 
-    h1  { font-size:  2.5em;    line-height:  1.125;  }
-    h2  { font-size:  2.0em;    line-height:  1.25;   }
-    h3  { font-size:  1.5em;    line-height:  1.25;   }
-    h4  { font-size:  1.125em;  line-height:  1.222;  }
+    h1          { font-size:  2.5em;    line-height:  1.125;  }
+    h2          { font-size:  2.0em;    line-height:  1.25;   }
+    h3          { font-size:  1.5em;    line-height:  1.25;   }
+    h4          { font-size:  1.125em;  line-height:  1.222;  }
+    blockquote  { font-size:  1.3em;    line-height:  1.6;    }
   }
   @include media-md-up {
     font-size:    1.0rem;
     line-height:  1.5;
 
-    h1  { font-size:  3.0em;    line-height:  1.05;   }
-    h2  { font-size:  2.25em;   line-height:  1.25;   }
-    h3  { font-size:  1.75em;   line-height:  1.25;   }
-    h4  { font-size:  1.125em;  line-height:  1.222;  }
+    h1          { font-size:  3.0em;    line-height:  1.05;   }
+    h2          { font-size:  2.25em;   line-height:  1.25;   }
+    h3          { font-size:  1.75em;   line-height:  1.25;   }
+    h4          { font-size:  1.125em;  line-height:  1.222;  }
+    blockquote  { font-size:  1.5em;    line-height:  1.6;    }
+  }
+
+
+  ////
+  // Images
+  img {
+    display:    block;
+    height:     auto;
+    margin:     0px auto;
+
+    @include media-xs-down  { max-width:  250px; }
+    @include media-sm-up    { max-width:  480px; }
+    @include media-md-up    { max-width:  640px; }
   }
 }

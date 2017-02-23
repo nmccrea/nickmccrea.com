@@ -30,3 +30,10 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+
+
+##
+# Jekyll Assets settings
+assets:
+  assets:
+    - "*.jpg"
