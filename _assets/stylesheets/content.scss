@@ -8,6 +8,10 @@
     color:  $secondary-color;
   }
 
+  blockquote {
+    border-left:  5px solid $border-color;
+  }
+
   // Responsive type scaling.
   // See http://typecast.com/blog/a-more-modern-scale-for-web-typography
   @include media-xs-down {
@@ -45,6 +49,7 @@
   ////
   // Images
   img {
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.3 );
     display:    block;
     height:     auto;
     margin:     0px auto;
@@ -52,5 +57,12 @@
     @include media-xs-down  { max-width:  250px; }
     @include media-sm-up    { max-width:  480px; }
     @include media-md-up    { max-width:  640px; }
+  }
+
+
+  ////
+  // Miscellaneous Elements
+  hr {
+    border-color: $border-color;
   }
 }
