@@ -1,7 +1,7 @@
 ---
-title: Nick McCrea | Work
-layout: default
-permalink: /work/
+layout:     default
+permalink:  /work/
+title:      Work
 ---
 
 # Work

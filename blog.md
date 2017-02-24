@@ -1,7 +1,7 @@
 ---
-title: Nick McCrea | Blog
-layout: default
-permalink: /blog/
+layout:     default
+permalink:  /blog/
+title:      Blog
 ---
 
 # Blog

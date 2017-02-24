@@ -1,7 +1,7 @@
 ---
-title: Nick McCrea | About
-layout: default
-permalink: /about/
+layout:     default
+permalink:  /about/
+title:      About
 ---
 
 ![Nick McCrea]( {% asset_path 'nick-mccrea-headshot.jpg' %} ){:width="280px" :height="280px"}
