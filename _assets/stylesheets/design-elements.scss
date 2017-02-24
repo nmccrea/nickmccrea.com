@@ -97,7 +97,6 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 // Links
 a {
   background-color: transparent;
-  color:            $primary-color;
   &:active, &:focus, &:hover {
     background-color: transparent;
     color:            $secondary-color;
@@ -108,21 +107,9 @@ a {
 
 ////
 // Nav
-.nav {
-  li > a {
+.nav li > a, .navbar-default .navbar-brand, .navbar-default .navbar-nav li > a {
     @extend a;
-  }
-}
-.navbar-default {
-  .navbar-brand {
-    @extend a;
-  }
-
-  .navbar-nav {
-    li > a {
-      @extend a;
-    }
-  }
+    color:  $primary-color;
 }
 
 

@@ -9,9 +9,8 @@ $nav-padding-vertical:      15px;
 $navbar-brand-width:        240px;
 $navbar-menu-item-width:    95px;
 
-$content-margin-top:        20px;
-$content-padding-top:       $header-min-height + ( 2 * $nav-padding-vertical ) + $content-margin-top;
-$content-padding-top-xs:    $header-min-height + $content-margin-top;
+$content-padding-top:       $header-min-height + ( 2 * $nav-padding-vertical );
+$content-padding-top-xs:    $header-min-height;
 $content-padding-bottom:    $footer-height;
 $content-padding-bottom-xs: $footer-height-xs;
 
