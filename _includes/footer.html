@@ -20,8 +20,14 @@
     </div>
 
     <div class="footer-right col-sm-6">
-      <div id="footer-copyright" class="footer-item">&copy; 2017 Nick McCrea</div>
-      <div id="footer-location" class="footer-item">Miami &bull; FL &bull; USA</div>
+      <div id="footer-copyright" class="footer-item">
+        {% assign this_year = "today" | date: "%Y" | plus: 0 %}
+        &copy; 2017 {% if this_year > 2017 %} - {{ this_year }}{% endif %} Nick McCrea
+      </div>
+
+      <div id="footer-location" class="footer-item">
+        Miami &bull; FL &bull; USA
+      </div>
     </div>
 
   </div>
