@@ -1,6 +1,7 @@
 ---
 layout:     default
 permalink:  /contact/
+style-id:   contact-page
 title:      Contact
 ---
 

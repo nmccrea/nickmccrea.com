@@ -5,7 +5,7 @@ layout: basic
 {% include header.html %}
 
 <main class="container">
-  <div class="content col-md-8 col-md-offset-2" aria-label="Content">
+  <div class="content col-md-8 col-md-offset-2" aria-label="Content" {% if page.style-id %}id="{{ page.style-id }}"{% endif %}>
     {{ content }}
   </div>
 </main>
