@@ -5,7 +5,8 @@ pre code {
 
 // Inline code only.
 code.highlighter-rouge {
-  padding:  0.3em;
+  padding:      0.3em;
+  white-space:  pre;
 }
 
 // Code blocks and inline code.
