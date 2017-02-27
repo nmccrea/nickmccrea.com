@@ -23,6 +23,8 @@ github_username:  nmccrea
 baseurl:          ""                          # the subpath of your site, e.g. /blog
 url:              http://www.nickmccrea.com   # the base hostname & protocol for your site, e.g. http://example.com
 
+timezone:         America/New York
+
 
 ##
 # Build settings

@@ -1,0 +1,17 @@
+#blog-index {
+
+  ul.post-list {
+
+    a {
+      color:  $primary-color;
+
+      &:active, &:focus, &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    li {
+      list-style:   none;
+    }
+  }
+}
