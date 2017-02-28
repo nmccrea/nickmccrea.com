@@ -1,10 +1,8 @@
 ---
-layout:     default
+layout:     page
 permalink:  /work/
 style-id:   work-page
-title:      Work
+title:      My Work
 ---
-
-# Work
 
 I've done some things.

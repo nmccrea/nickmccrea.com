@@ -1,13 +1,9 @@
 ---
-layout:     default
+layout:     page
 permalink:  /blog/
 style-id:   blog-index
-title:      Blog
+title:      The Blog
 ---
-
-# The Blog
-
-<hr />
 
 {% for post in site.posts %}
 

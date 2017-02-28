@@ -1,11 +1,9 @@
 ---
-layout:     default
+layout:     page
 permalink:  /contact/
 style-id:   contact-page
-title:      Contact
+title:      Let's Talk
 ---
-
-# Let's Talk
 
 If you're interested in hiring me for engineering, consulting, writing, or editing, shoot me an email at [{{ site.email }}]( mailto:{{ site.email }} ), or just fill out the form below.
 
