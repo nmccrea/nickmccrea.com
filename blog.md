@@ -11,7 +11,7 @@ title:      The Blog
 {% if post_year != list_year %}
   {% unless forloop.first %}</ul>{% endunless %}
   {% assign list_year = post_year %}
-  <h4 id="year-{{ list_year }}">{{ post_year }}</h4>
+  <h4 id="year-{{ list_year }}" class="year">{{ post_year }}</h4>
   <ul class="post-list">
 {% endif %}
 

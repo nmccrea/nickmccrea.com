@@ -1,13 +1,10 @@
 #blog-index {
+  h4 { margin: 0.3em auto; }
 
-  ul.post-list {
-
-    a {
-      @extend .link-black-and-red;
-    }
-
-    li {
-      list-style:   none;
-    }
+  .post-list {
+    li    { list-style:   none; }
+    a     { @extend .link-black-and-red; }
   }
+
+  .year { color: $secondary-color; }
 }
