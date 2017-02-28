@@ -1,6 +1,8 @@
 article.post {
   header {
-    margin-bottom: 10px;
+    border-bottom:  1px solid $border-color;
+    margin-bottom:  0.8em;
+    padding-bottom: 0.8em;
   }
 
   h1 {
@@ -8,7 +10,7 @@ article.post {
   }
 
   .post-meta {
-    color:      $gray;
+    color:      $secondary-color;
     font-style: italic;
   }
 }

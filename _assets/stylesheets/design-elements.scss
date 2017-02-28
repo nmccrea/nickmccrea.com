@@ -1,6 +1,7 @@
 ////
 // Color Palette
 $black:         black;
+$chicago:       #615B5B;
 $light-gray:    #CCC;
 $lighter-gray:  #EEE;
 $gray:          #888;
@@ -77,21 +78,23 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 
 ////
 // Typography
-@import url( 'https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' );
+@import url( 'https://fonts.googleapis.com/css?family=Comfortaa|Shadows+Into+Light+Two' );
+
 .fancy-font {
+  color:          $primary-color;
   font-family:    'Shadows Into Light Two', fantasy;
   font-variant:   small-caps;
   letter-spacing: 0.2em;
 }
 
-@import url( 'https://fonts.googleapis.com/css?family=Ubuntu' );
 .heading-font {
-  font-family:  'Ubuntu', sans-serif;
+  color:          $primary-color;
+  font-family:    'Comfortaa', fantasy;
 }
 
-@import url( 'https://fonts.googleapis.com/css?family=Roboto' );
 .content-font {
-  font-family:  'Roboto', sans-serif;
+  color:        $chicago;
+  font-family:  'Comfortaa', sans-serif;
 }
 
 
