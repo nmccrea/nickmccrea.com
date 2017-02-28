@@ -3,11 +3,7 @@
   ul.post-list {
 
     a {
-      color:  $primary-color;
-
-      &:active, &:focus, &:hover {
-        color: $secondary-color;
-      }
+      @extend .link-black-and-red;
     }
 
     li {

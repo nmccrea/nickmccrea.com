@@ -72,6 +72,13 @@
 
 
   ////
+  // Links
+  a {
+    @include custom-link( $slate-blue, $red );
+  }
+
+
+  ////
   // Miscellaneous Elements
   hr {
     border-color: $border-color;

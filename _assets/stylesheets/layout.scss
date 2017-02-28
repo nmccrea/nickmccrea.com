@@ -46,6 +46,10 @@ main, main.container {
   min-height:       $header-min-height;
   text-align:       center;
 
+  a {
+    @extend .link-black-and-red;
+  }
+
   nav {
     // border-bottom:  1px solid $border-color;
     min-height:     $header-min-height;
@@ -129,7 +133,7 @@ main, main.container {
   width:            100%;
 
   a {
-    color:  $secondary-color;
+    @include custom-link( $red, $red )
   }
 
   .footer-left {

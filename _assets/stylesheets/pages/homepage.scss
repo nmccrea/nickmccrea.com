@@ -47,6 +47,10 @@
       margin:         0.3rem auto 0.6rem;
     }
 
+    a {
+      @extend .link-black-and-red;
+    }
+
     hr {
       border-top: 1px solid $border-color;
       margin:     0.5rem auto;

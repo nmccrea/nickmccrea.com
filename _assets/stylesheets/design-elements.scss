@@ -4,6 +4,7 @@ $black:         black;
 $light-gray:    #CCC;
 $lighter-gray:  #EEE;
 $red:           red;
+$slate-blue:    #6A5ACD;
 $white:         white;
 
 
@@ -13,7 +14,7 @@ $background-color:  $white;
 $primary-color:     $black;
 $secondary-color:   $red;
 
-$border-color: $light-gray;
+$border-color:      $light-gray;
 
 
 ////
@@ -95,21 +96,18 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 
 ////
 // Links
-a {
+@mixin custom-link( $passive-color, $active-color ) {
   background-color: transparent;
+  color:            $passive-color;
+
   &:active, &:focus, &:hover {
     background-color: transparent;
-    color:            $secondary-color;
+    color:            $active-color;
     text-decoration:  none;
   }
 }
-
-
-////
-// Nav
-.nav li > a, .navbar-default .navbar-brand, .navbar-default .navbar-nav li > a {
-  @extend a;
-  color:  $primary-color;
+.link-black-and-red {
+  @include custom-link( $black, $red );
 }
 
 
