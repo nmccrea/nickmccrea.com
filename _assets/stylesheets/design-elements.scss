@@ -78,7 +78,7 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 
 ////
 // Typography
-@import url( 'https://fonts.googleapis.com/css?family=Comfortaa|Shadows+Into+Light+Two' );
+@import url( 'https://fonts.googleapis.com/css?family=Comfortaa|Shadows+Into+Light+Two|Questrial' );
 
 .fancy-font {
   color:          $primary-color;
@@ -94,7 +94,7 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 
 .content-font {
   color:        $chicago;
-  font-family:  'Comfortaa', sans-serif;
+  font-family:  'Questrial', sans-serif;
 }
 
 
