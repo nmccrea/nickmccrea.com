@@ -1,7 +1,7 @@
-<header id="header" class="navbar navbar-default navbar-fixed-top">
-  <nav class="container">
+<header id="header" class="navbar navbar-default navbar-static-top container">
+  <nav class="col-sm-12 col-md-8 col-md-offset-2">
 
-    <div class="navbar-header row">
+    <div class="navbar-header">
       <a href="{% link index.html %}" id="brand" class="navbar-brand" tabindex="1">Nick McCrea</a>
 
       <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -11,10 +11,9 @@
       </button>
     </div>
 
-    <ul id="navbar-menu" class="nav navbar-nav navbar-collapse collapse row">
+    <ul id="navbar-menu" class="nav navbar-nav navbar-right navbar-collapse collapse">
       <li><a id="link-about" href="{% link about.md %}" tabindex="2">ABOUT</a></li>
-      <li class="left-of-brand"><a id="link-work" href="{% link work.md %}" tabindex="2">WORK</a></li>
-      <li class="right-of-brand"><a id="link-blog" href="{% link blog.md %}" tabindex="2">BLOG</a></li>
+      <li><a id="link-blog" href="{% link blog.md %}" tabindex="2">BLOG</a></li>
       <li><a id="link-contact" href="{% link contact.md %}" tabindex="2">CONTACT</a></li>
     </ul>
     

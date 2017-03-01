@@ -6,7 +6,7 @@
 #homepage {
   // Vertical Alignment - Landscape
   @include media-xs-down-landscape {
-    #splash { margin-top: auto; }
+    #splash { margin-top: 4%; }
   }
   @include media-sm-up-landscape {
     #splash { margin-top: 15%; }
@@ -33,18 +33,18 @@
 
   #splash {
     @extend         .fancy-font;
-    margin-bottom:  0.3rem;
+    margin-bottom:  5px;
     text-align:     center;
 
     #name {
-      font-size:    3.3rem;
+      font-size:    32px;
       font-weight:  bolder;
-      margin:       0rem auto;
+      margin:       0 auto;
     }
 
     #occupation {
-      font-size:      1.8rem;
-      margin:         0.3rem auto 0.6rem;
+      font-size:      16px;
+      margin:         5px auto 10px;
     }
 
     a {
@@ -53,19 +53,20 @@
 
     hr {
       border-top: 1px solid $border-color;
-      margin:     0.5rem auto;
+      margin:     8px auto;
     }
 
     .nav {
       li {
-        font-size:    0.8rem;
+        font-size:    11px;
         font-weight:  bolder;
-      }
-    }
 
-    @include media-xs-down-portrait {
-      #name       { font-size: 2.9rem; }
-      #occupation { font-size: 1.6rem; }
+        @include media-sm-up {
+          display: inline-block;
+
+          a { width: 125px; }
+        }
+      }
     }
   }
 }

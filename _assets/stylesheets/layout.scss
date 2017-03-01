@@ -4,13 +4,6 @@ $footer-background-color:   $lighter-gray;
 $footer-height:             100px;
 $footer-height-xs:          120px;
 
-$header-min-height:         50px;
-$nav-padding-vertical:      15px;
-$navbar-brand-width:        240px;
-$navbar-menu-item-width:    95px;
-
-$content-padding-top:       $header-min-height + ( 2 * $nav-padding-vertical );
-$content-padding-top-xs:    $header-min-height;
 $content-padding-bottom:    $footer-height;
 $content-padding-bottom-xs: $footer-height-xs;
 
@@ -27,97 +20,59 @@ html, body {
 main, main.container {
   min-height:     100%;
   padding-bottom: $content-padding-bottom;
-  padding-top:    $content-padding-top;
   @include media-xs-down {
     padding-bottom: $content-padding-bottom-xs;
     padding-left:   5px;
     padding-right:  5px;
-    padding-top:    $content-padding-top-xs;
+    // padding-top:    $content-padding-top-xs;
    }
 }
+
 
 ////
 // Header
 #header {
   @extend           .fancy-font;
   background-color: $background-color;
-  border:           none;
-  color:            $primary-color;
-  min-height:       $header-min-height;
-  text-align:       center;
+  margin-bottom:    30px;
 
   a {
     @extend .link-black-and-red;
   }
 
   nav {
-    // border-bottom:  1px solid $border-color;
-    min-height:     $header-min-height;
+    padding:  0;
   }
 
   .navbar-brand {
-    font-size:    1.92rem;
+    font-size:    28px;
     font-weight:  bolder;
+    padding-left: 0px;
   }
 
   .navbar-nav {
-    font-size:    0.8rem;
+    font-size:    11px;
     font-weight:  bolder;
-  }
-
-  // Collapsed navbar.
-  @include media-xs-down {
-    nav           { border-bottom:  1px solid $border-color; }
-    .navbar-brand { font-size:      1.6rem; }
-    .navbar-nav   { text-align:     left; }
   }
 
   // Non-collapsed navbar.
   @include media-sm-up {
+    border: none;
+
     nav {
-      padding-bottom: $nav-padding-vertical;
-      padding-top:    $nav-padding-vertical;
+      border-bottom:  1px solid $border-color;
+      padding-top:    15px;
     }
+  }
 
-    .navbar-header {
-      margin-bottom:  -$header-min-height;
-      text-align:     center;
-      width:          100%;
-    }
-
-    .navbar-brand {
-      display:  inline-block;
-      float:    none;
-      margin:   0px;
-      position: relative;
-      width:    $navbar-brand-width;
-      z-index:  100;
-    }
-
-    .navbar-nav {
-      width:      100%;
-      text-align: center;
-
-      a {
-        padding-bottom: 13px;
-        padding-top:    17px;
-      }
-
-      li {
-        display:  inline-block;
-        float:    none;
-        width:    $navbar-menu-item-width;
-
-        &.left-of-brand {
-          margin-right: $navbar-brand-width / 2;
-        }
-        &.right-of-brand {
-          margin-left:  $navbar-brand-width / 2;
-        }
-      }
+  // Collapsed navbar.
+  @include media-xs-down {
+    .navbar-header button {
+      margin-right: 0;
     }
   }
 }
+
 
 ////
 // Footer
