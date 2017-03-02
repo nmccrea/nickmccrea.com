@@ -4,8 +4,13 @@ $footer-background-color:   $lighter-gray;
 $footer-height:             100px;
 $footer-height-xs:          120px;
 
+$header-height:             50px;
+$header-padding-top:        15px;
+
 $content-padding-bottom:    $footer-height;
 $content-padding-bottom-xs: $footer-height-xs;
+$content-padding-top:       $header-height + $header-padding-top + 1px; // 1px is for nav border
+$content-padding-top-xs:    $header-height + 1px;                       // 1px is for nav border
 
 ////
 // Page
@@ -19,12 +24,17 @@ html, body {
 // Content
 main, main.container {
   min-height:     100%;
-  padding-bottom: $content-padding-bottom;
+
+  @include media-sm-up {
+    padding-bottom: $content-padding-bottom;
+    padding-top:    $content-padding-top;
+  }
+
   @include media-xs-down {
     padding-bottom: $content-padding-bottom-xs;
     padding-left:   5px;
     padding-right:  5px;
-    // padding-top:    $content-padding-top-xs;
+    padding-top:    $content-padding-top-xs;
    }
 }
 
@@ -34,14 +44,14 @@ main, main.container {
 #header {
   @extend           .fancy-font;
   background-color: $background-color;
-  margin-bottom:    30px;
 
   a {
     @extend .link-black-and-red;
   }
 
   nav {
-    padding:  0;
+    min-height: $header-height;
+    padding:    0;
   }
 
   .navbar-brand {
@@ -57,16 +67,19 @@ main, main.container {
 
   // Non-collapsed navbar.
   @include media-sm-up {
-    border: none;
+    border:         none;
+    margin-bottom:  -$content-padding-top;
+    padding-top:    $header-padding-top;
 
     nav {
       border-bottom:  1px solid $border-color;
-      padding-top:    15px;
     }
   }
 
   // Collapsed navbar.
   @include media-xs-down {
+    margin-bottom:  -$content-padding-top-xs;
+
     .navbar-header button {
       margin-right: 0;
     }
