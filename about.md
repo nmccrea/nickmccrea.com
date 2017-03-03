@@ -7,7 +7,7 @@ title:      About Me
 
 I'm a software engineer, writer, and editor in Miami, Florida.
 
-I've worked at web startups, been a digital nomad, and dabbled in entrepreneurship.
+I've worked at web startups, been a digital nomad, and taken a few goes at entrepreneurship.
 
 I built [Sobot Rimulator](https://github.com/nmccrea/sobot-rimulator){:target="_blank"}, an autonomous robot programming teaching tool.
 
