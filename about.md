@@ -5,16 +5,14 @@ style-id:   about-page
 title:      About Me
 ---
 
-I'm a software engineer, writer, and editor in Miami, Florida.
+I'm a software engineer, writer, and editor from Miami, Florida.
 
-I've worked at web startups, been a digital nomad, and taken a few goes at entrepreneurship.
+I've worked at web startups, been a digital nomad, and attempted a couple of my own ventures. Find my full CV on [LinkedIn](https://www.linkedin.com/in/nickmccrea/){:target="_blank"}.
 
-I built [Sobot Rimulator](https://github.com/nmccrea/sobot-rimulator){:target="_blank"}, an autonomous robot programming teaching tool.
+I built [Sobot Rimulator](https://github.com/nmccrea/sobot-rimulator){:target="_blank"}, an autonomous robot simulator and programming tool.
 
-My [machine learning tutorial](https://www.toptal.com/machine-learning/machine-learning-theory-an-introductory-primer#obtain-only-eye-opening-engineers){:target="_blank"} and [robot programming tutorial](https://www.toptal.com/robotics/programming-a-robot-an-introductory-tutorial#obtain-only-eye-opening-engineers){:target="_blank"} are ranked number one on Google. At [Toptal](https://www.toptal.com/#obtain-only-eye-opening-engineers){:target="_blank"} I edited numerous popular articles on a wide range of technical topics.
+My [machine learning tutorial](https://www.toptal.com/machine-learning/machine-learning-theory-an-introductory-primer#obtain-only-eye-opening-engineers){:target="_blank"} and [robot programming tutorial](https://www.toptal.com/robotics/programming-a-robot-an-introductory-tutorial#obtain-only-eye-opening-engineers){:target="_blank"} are ranked at the top of Google search results. At [Toptal](https://www.toptal.com/blog#obtain-only-eye-opening-engineers){:target="_blank"} I edited numerous popular articles on a wide range of technical topics.
 
-I was born and raised in Miami. I've also lived and worked in Chicago, Illinois, and Bangkok, Thailand.
+I love all things space travel, artificial intelligence, and the future. I am excited to be a part of the burgeoning tech community here in Miami. Yo hablo algo español, y más cada día.
 
-I love all things space travel, robotics, and the future.
-
-Practico hablar espñol todos los días. I'm a coffee snob. When I'm not at work, you can find me at the improv, spitting bomb bars off the dome, or nerding out about space travel and Miami history.
+When I'm not at work, you can find me at the improv or the open mic, exploring Miami history, or playing basketball.
