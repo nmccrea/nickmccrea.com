@@ -8,6 +8,8 @@ You want to see a link? [Well this is a link.](#) Enjoy.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique turpis malesuada blandit mattis. In ut nunc at metus sagittis cursus. Fusce mauris purus, consectetur quis hendrerit et, maximus vel urna. Suspendisse rhoncus magna vel orci vehicula, in malesuada erat vestibulum. Donec ultricies, felis et tincidunt fringilla, sem nulla rhoncus enim, nec maximus urna odio sed nibh. Donec vehicula dui egestas eros sagittis, nec aliquam lectus hendrerit. Phasellus ut risus urna. Donec luctus nunc sed nunc venenatis tempor.
 
+![This is image alt text.](/assets/images/nick-mccrea-headshot.jpg)
+
 Curabitur sapien odio, facilisis at leo id, gravida congue lorem. Duis et ullamcorper dui. Suspendisse blandit neque quis metus bibendum laoreet. Integer bibendum, odio sed faucibus lobortis, lorem felis vestibulum ex, tincidunt faucibus augue erat quis massa. Mauris blandit sodales massa a fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla aliquam tortor vitae ipsum rutrum, in tincidunt dui sodales.
 
 ## This is an H2 Heading
