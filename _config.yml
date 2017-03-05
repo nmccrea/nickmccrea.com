@@ -35,13 +35,6 @@ exclude:
 
 
 ##
-# Jekyll Assets settings
-assets:
-  assets:
-    - "*.jpg"
-
-
-##
 # Defaults
 defaults:
   -
