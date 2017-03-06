@@ -28,6 +28,11 @@ disqus:
   shortname:        nick-mccrea-blog
 
 
+# Plugins
+gems:
+  - jekyll-feed
+
+
 ##
 # Build settings
 markdown: kramdown
