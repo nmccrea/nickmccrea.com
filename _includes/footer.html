@@ -17,6 +17,16 @@
           {% include icon-github.html username=site.github_username tabindex=100 %}
         </div>
       {% endif %}
+
+      {% if site.linkedin_username %}
+        <div id="footer-linkedin" class="footer-item">
+          {% include icon-linkedin.html username=site.linkedin_username tabindex=100 %}
+        </div>
+      {% endif %}
+
+      <div id="footer-rss" class="footer-item">
+        {% include icon-rss.html tabindex=100 %}
+      </div>
     </div>
 
     <div class="footer-right col-sm-6">

@@ -13,17 +13,19 @@
 # Site settings
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title:            Nick McCrea
-url:              https://www.nickmccrea.com  # the base hostname & protocol for your site, e.g. http://example.com
-baseurl:          ""                          # the subpath of your site, e.g. /blog
-timezone:         America/New York
-email:            nick@nickmccrea.com
-phone:            305.602.4300
+title:              Nick McCrea
+url:                https://www.nickmccrea.com  # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:            ""                          # the subpath of your site, e.g. /blog
+timezone:           America/New York
+email:              nick@nickmccrea.com
+phone:              305.602.4300
 description: >
   Computer Engineering and Software Development in Miami, FL, USA.
-github_username:  nmccrea
+author:             Nick McCrea
+github_username:    nmccrea
+linkedin_username:  nickmccrea
 disqus:
-  shortname:      nick-mccrea-blog
+  shortname:        nick-mccrea-blog
 
 
 ##
