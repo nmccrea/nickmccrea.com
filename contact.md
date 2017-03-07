@@ -1,5 +1,6 @@
 ---
 layout:     page
+html_title: Contact Me
 permalink:  /contact/
 style-id:   contact-page
 title:      Let's Talk
