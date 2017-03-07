@@ -29,5 +29,5 @@ If you're interested in hiring me for engineering, consulting, writing, or editi
               tabindex="10"></textarea>
   </div>
   
-  <input type="submit" value="Send" class="btn btn-primary col-xs-12 col-sm-6" tabindex="10">
+  <input type="submit" value="Send" class="btn btn-primary" tabindex="10">
 </form>

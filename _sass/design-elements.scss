@@ -113,6 +113,7 @@ body {
   &:active, &:focus, &:hover {
     background-color: transparent;
     color:            $active-color;
+    outline:          0px;
     text-decoration:  none;
   }
 }

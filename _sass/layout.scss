@@ -4,13 +4,14 @@ $footer-background-color:   $lighter-gray;
 $footer-height:             100px;
 $footer-height-xs:          120px;
 
+$header-border-width:       1px;
 $header-height:             50px;
 $header-padding-top:        15px;
 
 $content-padding-bottom:    $footer-height;
 $content-padding-bottom-xs: $footer-height-xs;
-$content-padding-top:       $header-height + $header-padding-top + 1px; // 1px is for nav border
-$content-padding-top-xs:    $header-height + 1px;                       // 1px is for nav border
+$content-padding-top:       $header-height + $header-padding-top + $header-border-width;
+$content-padding-top-xs:    $header-height + $header-border-width;
 
 ////
 // Page
@@ -72,16 +73,19 @@ main, main.container {
     padding-top:    $header-padding-top;
 
     nav {
-      border-bottom:  1px solid $border-color;
+      border-bottom:  $header-border-width solid $black;
     }
   }
 
   // Collapsed navbar.
   @include media-xs-down {
+    border-bottom:  $header-border-width solid $black;
     margin-bottom:  -$content-padding-top-xs;
 
     .navbar-header button {
       margin-right: 0;
+
+      .icon-bar { background-color: $black; }
     }
   }
 }

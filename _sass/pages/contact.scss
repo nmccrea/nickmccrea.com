@@ -3,4 +3,9 @@
   textarea {
     height: 10em;
   }
+
+  input[type="submit"] {
+    @include media-xs-down  { width: 100%;  }
+    @include media-sm-up    { width: 50%;   }
+  }
 }
