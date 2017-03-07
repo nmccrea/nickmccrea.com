@@ -81,6 +81,11 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 // Typography
 @import url( 'https://fonts.googleapis.com/css?family=Comfortaa|Shadows+Into+Light+Two|Questrial' );
 
+body {
+  -webkit-font-smoothing:   antialiased;
+  -moz-osx-font-smoothing:  grayscale;
+}
+
 .fancy-font {
   color:          $primary-color;
   font-family:    'Shadows Into Light Two', fantasy;
