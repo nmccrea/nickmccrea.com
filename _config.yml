@@ -22,6 +22,7 @@ google_analytics:   UA-82093601-2
 # Plugins
 gems:
   - jekyll-feed
+  - jekyll-sitemap  # This must appear AFTER all gems that create content that is to be mapped, and BEFORE gems that create content that is not to be mapped.
 
 ##
 # Defaults

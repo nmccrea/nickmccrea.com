@@ -19,6 +19,9 @@ gem 'jekyll', '3.4.0'
 group :jekyll_plugins do
   # Use jekyll-feed for RSS feeds.
   gem 'jekyll-feed',    '~> 0.6'
+
+  # Use jekyll-sitemap to generate a sitemap.
+  gem 'jekyll-sitemap', '~> 1.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

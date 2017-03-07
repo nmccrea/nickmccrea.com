@@ -3,6 +3,9 @@ layout:     page
 permalink:  /blog/
 style-id:   blog-index
 title:      The Blog
+
+# Remove this once there is content!
+sitemap:    false
 ---
 
 {% for post in site.posts %}
