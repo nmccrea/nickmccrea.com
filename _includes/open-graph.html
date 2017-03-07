@@ -1,0 +1,7 @@
+
+  <meta property="og:type"        content="{{ layout.og_type | default: 'website' }}" />
+  <meta property="og:title"       content="{{ include.title }}" />
+  <meta property="og:url"         content="{{ page.url | replace:'index.html','' | absolute_url }}" />
+  <meta property="og:description" content="{{ include.description }}" />
+  <meta property="og:site_name"   content="{{ site.title | escape }}" />
+  <meta property="og:image"       content="{{ include.image | absolute_url }}" />
