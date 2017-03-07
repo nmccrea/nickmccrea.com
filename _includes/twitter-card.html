@@ -1,0 +1,7 @@
+
+  <meta name="twitter:card"         content="summary" />
+  <meta name="twitter:title"        content="{{ include.title }}" />
+  <meta name="twitter:description"  content="{{ include.description }}" />
+  <meta name="twitter:image"        content="{{ include.image | absolute_url }}" />
+  <meta name="twitter:image:alt"    content="{{ include.description }}" />
+  {% if site.twitter_username %}<meta name="twitter:site"         content="@{{ site.twitter_username }}" />{% endif %}

@@ -25,6 +25,10 @@
         title       = html_page_title
         description = html_page_description
         image       = '/assets/images/seo-image.jpg' %}
+  {% include twitter-card.html
+        title       = html_page_title
+        description = html_page_description
+        image       = '/assets/images/seo-image.jpg' %}
   
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
