@@ -5,16 +5,14 @@ pre code {
 
 // Inline code only.
 code.highlighter-rouge {
-  padding:      0.3em;
+  padding:      0.25em 0.3em;
   white-space:  pre;
 }
 
 // Code blocks and inline code.
 pre.highlight, code.highlighter-rouge {
-  @include inset-box;
-
-  background:     #eef;
-  border:         none;
+  background:     $white-smoke;
+  border:         1px solid $border-color;
 }
 
 .highlight {
