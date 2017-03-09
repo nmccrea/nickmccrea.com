@@ -1,5 +1,6 @@
 ////
 // Color Palette
+
 $black:         black;
 $chicago:       #615B5B;
 $light-gray:    #CCC;
@@ -13,6 +14,7 @@ $white-smoke:   #F5F5F5;
 
 ////
 // Color Scheme
+
 $background-color:  $white;
 $primary-color:     $black;
 $secondary-color:   $red;
@@ -22,6 +24,7 @@ $border-color:      $light-gray;
 
 ////
 // Media Queries
+
 $bootstrap-screen-sm-min: 768px;
 $bootstrap-screen-md-min: 992px;
 $bootstrap-screen-lg-min: 1200px;
@@ -30,7 +33,6 @@ $breakpoint-screen-tiny:  350px;
 $breakpoint-screen-sm:    $bootstrap-screen-sm-min;
 $breakpoint-screen-md:    $bootstrap-screen-md-min;
 $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
-
 
 @mixin media-tiny-down {
   @media ( max-width: $breakpoint-screen-tiny - 1 ) { @content; }
@@ -79,6 +81,7 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 
 ////
 // Typography
+
 @import url( 'https://fonts.googleapis.com/css?family=Comfortaa|Shadows+Into+Light+Two|Questrial' );
 
 body {
@@ -106,6 +109,7 @@ body {
 
 ////
 // Links
+
 @mixin custom-link( $passive-color, $active-color ) {
   background-color: transparent;
   color:            $passive-color;
@@ -124,6 +128,7 @@ body {
 
 ////
 // Positioning
+
 @mixin vertical-center {
   display:          -webkit-flex;
   display:          flex;

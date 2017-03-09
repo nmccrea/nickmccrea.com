@@ -1,5 +1,6 @@
 ////
 // Variables
+
 $footer-background-color:   $lighter-gray;
 $footer-height:             100px;
 $footer-height-xs:          120px;
@@ -13,16 +14,20 @@ $content-padding-bottom-xs: $footer-height-xs;
 $content-padding-top:       $header-height + $header-padding-top + $header-border-width;
 $content-padding-top-xs:    $header-height + $header-border-width;
 
+
 ////
 // Page
+
 html, body {
   background-color: $background-color;
   font-size:        16px;               // Root font size.
   height:           100%;
 }
 
+
 ////
 // Content
+
 main, main.container {
   min-height:     100%;
 
@@ -42,6 +47,7 @@ main, main.container {
 
 ////
 // Header
+
 #header {
   @extend           .fancy-font;
   background-color: $background-color;
@@ -62,8 +68,9 @@ main, main.container {
   }
 
   .navbar-nav {
-    font-size:    11px;
-    font-weight:  bolder;
+    font-size:      11px;
+    font-weight:    bolder;
+    text-transform: uppercase;
   }
 
   // Non-collapsed navbar.
@@ -93,6 +100,7 @@ main, main.container {
 
 ////
 // Footer
+
 #footer {
   @extend .fancy-font;
   @extend .vertical-center;
