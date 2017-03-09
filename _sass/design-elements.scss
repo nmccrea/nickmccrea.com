@@ -98,12 +98,22 @@ body {
 
 .heading-font {
   color:          $primary-color;
-  font-family:    'Oswald', fantasy;
+  font-family:    'Oswald', sans-serif;
 }
 
 .content-font {
   color:        $chicago;
   font-family:  'Questrial', sans-serif;
+}
+
+
+////
+// Buttons
+
+.btn {
+  font-family:    'Oswald', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 
