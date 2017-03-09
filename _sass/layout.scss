@@ -113,7 +113,7 @@ main, main.container {
   width:            100%;
 
   a {
-    @include custom-link( $red, $red )
+    @include custom-link-colors( $red, $red )
   }
 
   .footer-left {

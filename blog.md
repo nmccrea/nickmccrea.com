@@ -19,7 +19,7 @@ sitemap:    false
 {% endif %}
 
 <li>
-  {% include post_preview.html %}
+  {% include post_preview.html post=post %}
 </li>
 
 {% if forloop.last %}</ul>{% endif %}

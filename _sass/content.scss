@@ -79,7 +79,7 @@
   // Links
 
   a {
-    @include custom-link( $slate-blue, $red );
+    @include custom-link-colors( $slate-blue, $red );
   }
 
 

@@ -93,7 +93,7 @@ body {
   color:          $primary-color;
   font-family:    'Shadows Into Light Two', fantasy;
   font-variant:   small-caps;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.17em;
 }
 
 .heading-font {
@@ -110,19 +110,25 @@ body {
 ////
 // Links
 
-@mixin custom-link( $passive-color, $active-color ) {
+@mixin clear-link-decorations {
   background-color: transparent;
-  color:            $passive-color;
 
   &:active, &:focus, &:hover {
     background-color: transparent;
-    color:            $active-color;
     outline:          0px;
     text-decoration:  none;
   }
 }
+
+@mixin custom-link-colors( $passive-color, $active-color ) {
+  @include  clear-link-decorations;
+  color:    $passive-color;
+  
+  &:active, &:focus, &:hover { color: $active-color; }
+}
+
 .link-black-and-red {
-  @include custom-link( $black, $red );
+  @include custom-link-colors( $black, $red );
 }
 
 

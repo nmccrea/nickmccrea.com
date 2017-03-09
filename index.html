@@ -8,9 +8,6 @@ layout: basic
     <div id="splash" class="col-xs-12 col-sm-8 col-sm-offset-2">
       <h1 id="name">Nick McCrea</h1>
       <h2 id="occupation">Software Engineer</h2>
-
-      <hr />
-      
       <nav>
         <ul class="row nav">
           <li><a id="link-about" href="{% link about.md %}" tabindex="1">About</a></li>
@@ -19,6 +16,16 @@ layout: basic
         </ul>
       </nav>
     </div>
+
+
+    <ul id="featured-posts" class="col-xs-12 col-sm-6 col-sm-offset-3">
+      {% assign featured_posts = site.posts | where_exp: "post", "post.path contains '/featured/'" %}
+
+      {% for post in featured_posts %}
+        {% unless forloop.first %}<hr />{% endunless %}
+        <li>{% include post_preview.html post=post with_description=true with_date=true %}</li>
+      {% endfor %}
+    </ul>
 
   </div>
 </main>

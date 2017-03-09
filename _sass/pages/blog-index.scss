@@ -1,8 +1,19 @@
 #blog-index {
   .post-list {
     li  { list-style: none; }
-    a   { @extend     .link-black-and-red; }
-    p   { margin:     0.3em auto; }  
+    p   { margin:     0.3em auto; }
+
+    .post-title {
+      @extend .heading-font;
+    }
+
+    a {
+      @include clear-link-decorations;
+
+      &:active, &:focus, &:hover {
+        .post-title { color: $secondary-color; }
+      }
+    }
   }
 
   .year { color: $secondary-color; }
