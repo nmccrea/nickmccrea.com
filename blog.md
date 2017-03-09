@@ -1,4 +1,5 @@
 ---
+html_title: Blog
 layout:     page
 permalink:  /blog/
 style-id:   blog-index
@@ -19,7 +20,7 @@ sitemap:    false
 {% endif %}
 
 <li>
-  {% include post_preview.html post=post %}
+  {% include post-preview.html post=post elements="date title" %}
 </li>
 
 {% if forloop.last %}</ul>{% endif %}

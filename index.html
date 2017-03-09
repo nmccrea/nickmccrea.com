@@ -23,7 +23,7 @@ layout: basic
 
       {% for post in featured_posts %}
         {% unless forloop.first %}<hr />{% endunless %}
-        <li>{% include post_preview.html post=post with_description=true with_date=true %}</li>
+        <li>{% include post-preview.html post=post elements="title description date" %}</li>
       {% endfor %}
     </ul>
 

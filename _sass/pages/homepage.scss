@@ -88,31 +88,5 @@
     text-align: center;
 
     li  { list-style: none; }
-
-    .post-title {
-      @extend         .fancy-font;
-      font-size:      12px;
-      font-weight:    bolder;
-      text-transform: uppercase;
-    }
-
-    .post-date, .post-description {
-      @extend .content-font;
-    }
-
-    .post-date {
-      color:      $secondary-color;
-      font-size:  0.8em;
-      font-style: italic;
-      margin-bottom:  0;
-    }
-
-    a {
-      @include clear-link-decorations;
-
-      &:active, &:focus, &:hover {
-        .post-description { color: $primary-color; }
-      }
-    }
   }
 }

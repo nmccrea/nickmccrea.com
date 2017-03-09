@@ -1,0 +1,20 @@
+<div class="post-preview">
+  <a href="{{ post.url | relative_url }}">
+
+    {% assign elements = include.elements | split: ' ' %}
+    {% for element in elements %}
+      {% if element == 'title' %}
+      <p class="post-title">{{ include.post.title | escape }}</p>
+      {% endif %}
+
+      {% if element == 'description' %}
+      <p class="post-description">{{ include.post.description | default: include.post.excerpt | strip_html }}</p>
+      {% endif %}
+
+      {% if element == 'date' %}
+      <p class="post-date">{{ include.post.date | date: "%b %-d, %Y" }}</p>
+      {% endif %}
+    {% endfor %}
+
+  </a>
+</div>

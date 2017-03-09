@@ -1,20 +1,17 @@
 #blog-index {
   .post-list {
-    li  { list-style: none; }
-    p   { margin:     0.3em auto; }
+    li { list-style: none; }
 
-    .post-title {
-      @extend .heading-font;
+    p {
+      display:  inline;
     }
 
-    a {
-      @include clear-link-decorations;
+    .post-date { padding-right: 1em; }
 
+    a {
       &:active, &:focus, &:hover {
         .post-title { color: $secondary-color; }
       }
     }
   }
-
-  .year { color: $secondary-color; }
 }
