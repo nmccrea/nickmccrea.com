@@ -1,8 +1,8 @@
 .post-preview{
   .post-title {
-    @extend         .fancy-font;
-    font-size:      12px;
-    font-weight:    bolder;
+    @extend         .heading-font;
+    font-size:      14px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
   }
 

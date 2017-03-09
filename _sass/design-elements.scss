@@ -82,7 +82,7 @@ $breakpoint-screen-lg:    $bootstrap-screen-lg-min;
 ////
 // Typography
 
-@import url( 'https://fonts.googleapis.com/css?family=Comfortaa|Shadows+Into+Light+Two|Questrial' );
+@import url( 'https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Questrial|Oswald' );
 
 body {
   -webkit-font-smoothing:   antialiased;
@@ -98,7 +98,7 @@ body {
 
 .heading-font {
   color:          $primary-color;
-  font-family:    'Comfortaa', fantasy;
+  font-family:    'Oswald', fantasy;
 }
 
 .content-font {
