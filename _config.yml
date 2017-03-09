@@ -1,8 +1,8 @@
 ##
 # Site settings
 title:              Nick McCrea
-url:                https://www.nickmccrea.com  # the base hostname & protocol for your site, e.g. http://example.com
-baseurl:            ""                          # the subpath of your site, e.g. /blog
+url:                https://nickmccrea.com  # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:            ""                      # the subpath of your site, e.g. /blog
 timezone:           America/New York
 email:              nick@nickmccrea.com
 phone:              305.602.4300
