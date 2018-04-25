@@ -3,10 +3,10 @@ layout:     page
 html_title: Contact Me
 permalink:  /contact/
 style-id:   contact-page
-title:      Let's Talk
+title:      Talk to Me
 ---
 
-If you're interested in hiring me for engineering, consulting, writing, or editing, shoot me an email at [{{ site.email }}]( mailto:{{ site.email }} ), or just fill out the form below.
+Have some reason you want to talk to me? The internet, in its bounty, has provided a place just for that. Feel free to fill out the form below (or you can shoot me an email at [{{ site.email }}]( mailto:{{ site.email }} )).
 
 <form id="contact-form" action="https://formspree.io/{{ site.email }}" method="POST">
   <div class="form-group">
@@ -29,6 +29,6 @@ If you're interested in hiring me for engineering, consulting, writing, or editi
               class="form-control"
               tabindex="10"></textarea>
   </div>
-  
+
   <input type="submit" value="Send" class="btn btn-primary" tabindex="10">
 </form>
