@@ -3,7 +3,7 @@ html_title: Blog
 layout:     page
 permalink:  /blog/
 style-id:   blog-index
-title:      The Blog
+title:      Stuff I Wrote
 ---
 
 {% for post in site.posts %}
@@ -42,7 +42,7 @@ title:      The Blog
     </a>
     </div>
   </li>
-  
+
   <li>
     <div class="post-preview">
     <a target="_blank" href="https://www.toptal.com/freelance/a-digital-nomad-adventure-traveling-with-hacker-paradise#obtain-only-eye-opening-engineers">

@@ -3,10 +3,10 @@ layout:     page
 html_title: Contact Me
 permalink:  /contact/
 style-id:   contact-page
-title:      Talk to Me
+title:      Contact Me
 ---
 
-Have some reason you want to talk to me? The internet, in its bounty, has provided a place just for that. Feel free to fill out the form below (or you can shoot me an email at [{{ site.email }}]( mailto:{{ site.email }} )).
+Need to reach me? The internet hath provided a place for that. Feel free to fill out the form below (or you can shoot me an email at [{{ site.email }}]( mailto:{{ site.email }} )).
 
 <form id="contact-form" action="https://formspree.io/{{ site.email }}" method="POST">
   <div class="form-group">
