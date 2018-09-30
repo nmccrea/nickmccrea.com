@@ -42,20 +42,4 @@ title:      Stuff I Wrote
     </a>
     </div>
   </li>
-
-  <li>
-    <div class="post-preview">
-    <a target="_blank" href="https://www.toptal.com/freelance/a-digital-nomad-adventure-traveling-with-hacker-paradise#obtain-only-eye-opening-engineers">
-      <p class="post-title">Digital Nomad Life</p>
-    </a>
-    </div>
-  </li>
-
-  <li>
-    <div class="post-preview">
-    <a target="_blank" href="https://www.toptal.com/freelance/learn-to-code-wisdom-and-tools#obtain-only-eye-opening-engineers">
-      <p class="post-title">Learning to Code</p>
-    </a>
-    </div>
-  </li>
 </ul>
