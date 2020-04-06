@@ -5,7 +5,7 @@ style-id:   about-page
 title:      About Me
 ---
 
-I'm a software engineer and website-haver from Miami, Florida. Why do I have a website? It remains a mystery. I'm probably supposed to be blogging.
+I'm a software engineer and website-haver from Miami, Florida.
 
 I've worked at a few startups, lived abroad as a digital nomad, and attempted a couple ventures of my own. If any of that interests you there's more info on my [LinkedIn](https://www.linkedin.com/in/nickmccrea/){:target="_blank"}.
 
