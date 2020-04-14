@@ -1,7 +1,7 @@
 ---
 layout:     home
 permalink:  /
-style-id:   about-page
+style-id:   home-page
 title:      About Me
 ---
 
