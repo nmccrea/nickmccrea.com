@@ -1,6 +1,6 @@
 ---
 layout:     about
-permalink:  /about/
+permalink:  /
 style-id:   about-page
 title:      About Me
 ---

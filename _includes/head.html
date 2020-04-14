@@ -16,7 +16,7 @@
   <meta name="description" content="{{ html_page_description }}">
 
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.md','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
   {% include bootstrap.html %}
@@ -30,7 +30,7 @@
         title       = html_page_title
         description = html_page_description
         image       = '/assets/images/seo-image.jpg' %}
-  
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
