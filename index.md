@@ -2,7 +2,6 @@
 layout:     home
 permalink:  /
 style-id:   home-page
-title:      About Me
 ---
 
 I'm a software engineer, writer, and website-haver based in Miami, FL.
