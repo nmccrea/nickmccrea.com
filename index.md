@@ -1,8 +1,7 @@
 ---
-layout:     about
-permalink:  /about/
-style-id:   about-page
-title:      About Me
+layout:     home
+permalink:  /
+style-id:   home-page
 ---
 
 I'm a software engineer, writer, and website-haver based in Miami, FL.
