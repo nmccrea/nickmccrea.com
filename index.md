@@ -1,5 +1,5 @@
 ---
-layout:     about
+layout:     home
 permalink:  /
 style-id:   about-page
 title:      About Me
