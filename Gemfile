@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', '4.1.1'
+gem 'jekyll', '4.2.0'
 
 # If you want to use GitHub Pages, remove the "gem 'jekyll'" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -18,7 +18,7 @@ gem 'jekyll', '4.1.1'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # Use jekyll-feed for RSS feeds.
-  gem 'jekyll-feed',    '~> 0.15.0'
+  gem 'jekyll-feed',    '~> 0.15.1'
 
   # Use jekyll-sitemap to generate a sitemap.
   gem 'jekyll-sitemap', '~> 1.4.0'
