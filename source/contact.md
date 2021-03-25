@@ -24,7 +24,7 @@ Need to reach me? The internet hath provided a place for that. Feel free to fill
             tabindex="10">
   </div>
   <div class="form-group">
-    <textarea name="message"  
+    <textarea name="message"
               placeholder="Type your message here."
               class="form-control"
               tabindex="10"></textarea>
