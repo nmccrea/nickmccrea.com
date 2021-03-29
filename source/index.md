@@ -1,6 +1,5 @@
 ---
 layout:     home
-permalink:  /
 style-id:   home-page
 ---
 

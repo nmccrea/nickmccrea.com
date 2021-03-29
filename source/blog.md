@@ -1,9 +1,9 @@
 ---
-html_title: Blog
-layout:     page
-permalink:  /blog/
-style-id:   blog-index
 title:      Stuff I Wrote
+html_title: Blog
+permalink:  blog
+layout:     page
+style-id:   blog-index
 ---
 
 {% for post in site.posts %}
