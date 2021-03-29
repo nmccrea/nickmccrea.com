@@ -6,7 +6,7 @@ style-id:   contact-page
 title:      Contact Me
 ---
 
-Need to reach me? The internet hath provided a place for that. Feel free to fill out the form below (or you can shoot me an email at [{{ site.email }}]( mailto:{{ site.email }} )).
+Need to reach me? Behold, the internet has provided a place for that. Feel free to fill out the form below (or just email me at [{{ site.email }}]( mailto:{{ site.email }} )).
 
 <form id="contact-form" action="https://formspree.io/{{ site.email }}" method="POST">
   <div class="form-group">
