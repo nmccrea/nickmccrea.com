@@ -12,11 +12,11 @@ author:             Nick McCrea
 
 ##
 # Associated accounts
-github_username:    nmccrea
-linkedin_username:  nickmccrea
+github_username: nmccrea
+linkedin_username: nickmccrea
 disqus:
-  shortname:        nick-mccrea-blog
-google_analytics:   UA-82093601-2
+  shortname: nick-mccrea-blog
+google_analytics: UA-82093601-2
 
 ##
 # Plugins

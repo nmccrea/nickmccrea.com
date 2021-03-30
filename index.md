@@ -1,6 +1,6 @@
 ---
-layout:     home
-style-id:   home-page
+layout: home
+style-id: home-page
 ---
 
 I'm a computer engineer, writer, and website-haver based in Miami and the Space Coast of Florida.

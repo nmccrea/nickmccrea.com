@@ -1,9 +1,9 @@
 ---
-title:      Contact Me
+title: Contact Me
 html_title: Contact Me
-permalink:  contact
-layout:     page
-style-id:   contact-page
+permalink: contact
+layout: page
+style-id: contact-page
 ---
 
 Need to reach me? Behold, the internet has provided a place for that. Feel free to fill out the form below (or just email me at [{{ site.email }}]( mailto:{{ site.email }} )).
